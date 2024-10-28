@@ -1,0 +1,10 @@
+version: '3'
+services:
+  voice_locker:
+    container_name: voice_locker
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/app
+    env_file: .env
